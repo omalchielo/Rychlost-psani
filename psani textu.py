@@ -3,7 +3,6 @@ import time
 import cv2
 import pytesseract
 import pyautogui
-from deep_translator import GoogleTranslator
 
 
 def main(mod,cas):
@@ -43,8 +42,6 @@ def main(mod,cas):
                 time.sleep(3)
 
 
-
-
         a = pyautogui.screenshot(region = (x1, y1, x2, y2))
         a.save("nevim.png")
         pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -52,7 +49,6 @@ def main(mod,cas):
         text = pytesseract.image_to_string(img,lang="ces")
         mystr =  " ".join(text.splitlines())
         keyboard.write(mystr,delay=0.01)
-
 
 
 def zacatek():
