@@ -1,3 +1,9 @@
+"""
+ Vezme text z obrazovky a prepise ho(napise ho za vas)
+ Napriklad, pri testu rychlosti psaní 
+ 
+"""
+
 import keyboard
 import time
 import cv2
